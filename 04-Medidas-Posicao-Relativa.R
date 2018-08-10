@@ -12,6 +12,7 @@ carros <- read.csv("carros.csv")
 # Resumo dos dados
 head(carros)
 str(carros)
+View(carros)
 
 # Medidas de Tendência Central
 summary(carros$ano)
@@ -24,7 +25,7 @@ median(carros$preco)
 quantile(carros$preco)
 quantile(carros$preco, probs = c(0.01, 0.99))
 quantile(carros$preco, seq(from = 0, to = 1, by = 0.20))
-IQR(carros$preco) # Diferença entre Q3 e Q1
-range(carros$preco)
+IQR(carros$preco) # Diferença entre Q3 e Q1, interquartil
+range(carros$preco)#amplitude
 summary(carros$preco)
 diff(range(carros$preco))

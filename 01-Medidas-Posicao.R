@@ -18,8 +18,8 @@ summary(vendas$Custo)
 ?mean
 mean(vendas$Valor)
 mean(vendas$Custo)
-mean(vendas$Valor, trim = 0.1)
-mean(vendas$Valor, na.rm = TRUE)
+mean(vendas$Valor, trim = 0.1) #corta os extremos, para não interferir
+mean(vendas$Valor, na.rm = TRUE)#corta os valores missing
 
 # Média Ponderada
 ?weighted.mean

@@ -62,8 +62,6 @@ slices <- c(10, 12, 4, 16, 8)
 lbls <- c("US", "UK", "Australia", "Germany", "France")
 pie3D(slices,labels=lbls,explode=0.1,
       main="Beer per Country")
-
-
 # Line
 
 # Dados
@@ -129,7 +127,7 @@ treemap(data, index=c("group","subgroup"),
           c("center", "center"), 
           c("right", "bottom")),                                  
         overlap.labels=0.5,           
-        inflate.labels=F,                     
+        inflate.labels=F                    
 )
 
 
